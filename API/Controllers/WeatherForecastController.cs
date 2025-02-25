@@ -2,9 +2,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;
 
-[ApiController]
-[Route("[controller]")]
-public class WeatherForecastController : ControllerBase
+//Borttaget när de härleder från BaseApiController eftersom BAC står för att sätta attributen
+//[ApiController]
+//[Route("[controller]")]
+public class WeatherForecastController : BaseApiController
 {
     private static readonly string[] Summaries = new[]
     {
